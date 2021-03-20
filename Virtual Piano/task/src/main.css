@@ -19,12 +19,17 @@ body {
 
 kbd {
     display: inline-block;
-    height: 150px;
+    padding: 130px 0 20px 0;
+    /*height: 150px;*/
+    /*line-height: 150px;*/
+    /*vertical-align: bottom;*/
     width: 50px;
     border: black solid 1px;
     background-color: white;
-    margin-left: 0;
+    /*margin-left: 0;*/
+    /*justify-items: end;*/
     /*text-align: center;*/
     /*justify-content: center;*/
     /*align-items: center;*/
+    vertical-align: bottom;
 }
