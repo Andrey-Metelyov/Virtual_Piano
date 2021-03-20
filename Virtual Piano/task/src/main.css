@@ -1,0 +1,30 @@
+/**,*/
+/*. {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+body {
+    background-color: darkslategray;
+    /*position: relative;*/
+}
+
+.container {
+    width: max-content;
+    height: max-content;
+    margin: 10% auto;
+    text-align: center;
+    /*border: black solid 1px;*/
+}
+
+kbd {
+    display: inline-block;
+    height: 150px;
+    width: 50px;
+    border: black solid 1px;
+    background-color: white;
+    margin-left: 0;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
