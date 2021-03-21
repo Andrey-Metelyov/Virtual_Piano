@@ -526,6 +526,109 @@ files:
         }
     );
   learner_created: false
+- name: src/main.css
+  visible: true
+  text: |-
+    /**,*/
+    /*. {*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*}*/
+
+    body {
+        background-color: darkslategray;
+        /*position: relative;*/
+    }
+
+    .container {
+        width: max-content;
+        height: max-content;
+        margin: 10% auto;
+        text-align: center;
+        /*border: black solid 1px;*/
+    }
+
+    kbd {
+        display: inline-block;
+        padding: 130px 0 20px 0;
+        /*height: 150px;*/
+        /*line-height: 150px;*/
+        /*vertical-align: bottom;*/
+        width: 50px;
+        border: black solid 1px;
+        background-color: white;
+        /*margin-left: 0;*/
+        /*justify-items: end;*/
+        /*text-align: center;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        vertical-align: bottom;
+    }
+  learner_created: true
+- name: src/main.js
+  visible: true
+  text: |2
+
+
+    document.addEventListener("keydown", function(event) {
+        let aud = document.createElement("AUDIO");
+        switch (event.code) {
+            case "KeyA":
+                // A.play();
+                aud.setAttribute("src", "aud/A.mp3");
+                break;
+            case "KeyS":
+                // S.play();
+                aud.setAttribute("src", "aud/S.mp3");
+                break;
+            case "KeyD":
+                // D.play();
+                aud.setAttribute("src", "aud/D.mp3");
+                break;
+            case "KeyF":
+                // F.play();
+                aud.setAttribute("src", "aud/F.mp3");
+                break;
+            case "KeyG":
+                // G.play();
+                aud.setAttribute("src", "aud/G.mp3");
+                break;
+            case "KeyH":
+                // H.play();
+                aud.setAttribute("src", "aud/H.mp3");
+                break;
+            case "KeyJ":
+                // J.play();
+                aud.setAttribute("src", "aud/J.mp3");
+                break;
+            default:
+                console.log("Warning: wrong key");
+                return;
+        }
+        aud.play();
+    });
+  learner_created: true
+- name: src/aud/Y.mp3
+  visible: true
+  learner_created: true
+- name: src/aud/E.mp3
+  visible: true
+  learner_created: true
+- name: src/aud/W.mp3
+  visible: true
+  learner_created: true
+- name: src/aud/T.mp3
+  visible: true
+  learner_created: true
+- name: src/aud/U.mp3
+  visible: true
+  learner_created: true
+- name: src/black_keys.zip
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/101/stages/560/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 21 Mar 2021 04:06:45 UTC
 record: -1

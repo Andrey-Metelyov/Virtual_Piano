@@ -31,6 +31,26 @@ document.addEventListener("keydown", function(event) {
             // J.play();
             aud.setAttribute("src", "aud/J.mp3");
             break;
+        case "KeyW":
+            // J.play();
+            aud.setAttribute("src", "aud/W.mp3");
+            break;
+        case "KeyE":
+            // J.play();
+            aud.setAttribute("src", "aud/E.mp3");
+            break;
+        case "KeyT":
+            // J.play();
+            aud.setAttribute("src", "aud/T.mp3");
+            break;
+        case "KeyY":
+            // J.play();
+            aud.setAttribute("src", "aud/Y.mp3");
+            break;
+        case "KeyU":
+            // J.play();
+            aud.setAttribute("src", "aud/U.mp3");
+            break;
         default:
             console.log("Warning: wrong key");
             return;
