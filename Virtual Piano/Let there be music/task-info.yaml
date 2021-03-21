@@ -345,6 +345,66 @@ files:
         }
     );
   learner_created: false
+- name: src/main.css
+  visible: true
+  text: |-
+    /**,*/
+    /*. {*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*}*/
+
+    body {
+        background-color: darkslategray;
+        /*position: relative;*/
+    }
+
+    .container {
+        width: max-content;
+        height: max-content;
+        margin: 10% auto;
+        text-align: center;
+        /*border: black solid 1px;*/
+    }
+
+    kbd {
+        display: inline-block;
+        padding: 130px 0 20px 0;
+        /*height: 150px;*/
+        /*line-height: 150px;*/
+        /*vertical-align: bottom;*/
+        width: 50px;
+        border: black solid 1px;
+        background-color: white;
+        /*margin-left: 0;*/
+        /*justify-items: end;*/
+        /*text-align: center;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        vertical-align: bottom;
+    }
+  learner_created: true
+- name: src/main.js
+  visible: true
+  text: |-
+    document.addEventListener("keydown", function(event) {
+        if (event.code === "KeyA" ||
+            event.code === "KeyS" ||
+            event.code === "KeyD" ||
+            event.code === "KeyF" ||
+            event.code === "KeyG" ||
+            event.code === "KeyH" ||
+            event.code === "KeyJ"
+        ) {
+            console.log(`The '${event.key}' key is pressed.`);
+        } else {
+            console.log("Warning: wrong key");
+        }
+    });
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/101/stages/559/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Sun, 21 Mar 2021 03:18:14 UTC
 record: -1
